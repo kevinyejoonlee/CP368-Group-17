@@ -1,0 +1,33 @@
+The output of: uname -a : is
+>>>>>>>>>>>>>>>
+Darwin kevynsyro14ynch.wlu.ca 21.6.0 Darwin Kernel Version 21.6.0: Mon Apr 24 21:11:17 PDT 2023; root:xnu-8020.240.18.701.5~1/RELEASE_ARM64_T6000 arm64
+<<<<<<<<<<<<<<<
+The output of: vm_stat : is
+>>>>>>>>>>>>>>>
+Mach Virtual Memory Statistics: (page size of 16384 bytes)
+Pages free:                               14342.
+<<<<<<<<<<<<<<<
+The output of: ls -l -a -F : is
+>>>>>>>>>>>>>>>
+total 208
+drwxr-xr-x  12 kevinlee  staff    384 Jun  6 13:43 ./
+drwxr-xr-x@ 10 kevinlee  staff    320 Jun  6 13:24 ../
+-rw-rw-r--   1 kevinlee  staff    492 Jun  5 11:39 Makefile-Q1
+-rw-rw-r--   1 kevinlee  staff    497 Jun  5 11:39 Makefile-Q2
+-rw-r--r--   1 kevinlee  staff   1617 Jun  6 13:28 RESUTS.txt
+-rwxr-xr-x   1 kevinlee  staff  34413 Jun  6 13:22 collatz_sequence*
+-rw-r--r--   1 kevinlee  staff   2909 Jun  6 13:23 collatz_sequence.c
+-rw-r--r--   1 kevinlee  staff    381 Jun  6 13:43 output.txt
+-rwxr-xr-x   1 kevinlee  staff  34719 Jun  6 13:43 process_management*
+-rw-r--r--   1 kevinlee  staff   3672 Jun  6 13:43 process_management.c
+-rw-r--r--   1 kevinlee  staff     40 Jun  6 13:40 sample_in_process.txt
+-rw-r--r--   1 kevinlee  staff     12 Jun  6 13:27 start_numbers.txt
+<<<<<<<<<<<<<<<
+The output of: whoami : is
+>>>>>>>>>>>>>>>
+kevinlee
+<<<<<<<<<<<<<<<
+The output of: pwd : is
+>>>>>>>>>>>>>>>
+/Users/kevinlee/Documents/GitHub/CP368-Group-17/A2
+<<<<<<<<<<<<<<<

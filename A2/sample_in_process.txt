@@ -1,0 +1,5 @@
+uname -a
+vm_stat
+ls -l -a -F
+whoami
+pwd
