@@ -1,0 +1,58 @@
+HERE ARE THE OUTPUTS FOR THE TASK
+
+--------------------------------------------------------------------------------------------------------------------------------------
+❯ gcc -o allocation allocation.c -std=gnu99 -Wall
+
+❯ ./allocation 1048576
+
+Initializing memory with size: 1048576 bytes
+allocator> RQ P0 200000 B
+Successfully allocated 200000 to process P0
+allocator> RQ P1 350000 B
+Successfully allocated 350000 to process P1
+allocator> RQ P2 300000 B
+Successfully allocated 300000 to process P2
+allocator> RL P0
+Successfully released memory for process P0
+allocator> Status
+Partitions [Allocated memory]:
+Address [550000:849999] Process P2
+Address [200000:549999] Process P1
+Holes [Free memory]:
+Address [0:199999] len = 200000
+Address [850000:1048575] len = 198576
+allocator> RQ P3 120000 B
+Successfully allocated 120000 to process P3
+allocator> Status
+Partitions [Allocated memory]:
+Address [850000:969999] Process P3
+Address [550000:849999] Process P2
+Address [200000:549999] Process P1
+Holes [Free memory]:
+Address [0:199999] len = 200000
+Address [970000:1048575] len = 78576
+allocator> RQ P4 150000 B
+Successfully allocated 150000 to process P4
+allocator> RQ P5 80000 B
+No hole of sufficient size
+allocator> Status
+Partitions [Allocated memory]:
+Address [0:149999] Process P4
+Address [850000:969999] Process P3
+Address [550000:849999] Process P2
+Address [200000:549999] Process P1
+Holes [Free memory]:
+Address [150000:199999] len = 50000
+Address [970000:1048575] len = 78576
+allocator> C
+Compaction process is successful
+allocator> Status
+Partitions [Allocated memory]:
+Address [0:149999] Process P4
+Address [150000:269999] Process P3
+Address [270000:569999] Process P2
+Address [570000:919999] Process P1
+Holes [Free memory]:
+Address [920000:1048575] len = 128576
+allocator> 
+--------------------------------------------------------------------------------------------------------------------------------------
